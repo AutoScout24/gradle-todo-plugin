@@ -1,2 +1,4 @@
 type: "ignore"
+owners:
+  - "#AS24-Mobile-Android-Team-ds@scout24.com"
 vertical: "as24"
