@@ -4,6 +4,7 @@ buildscript {
    }
    dependencies {
     classpath 'com.github.townsfolk:gradle-release:1.2'
+	classpath 'commons-io:commons-io:2.0.1'
    }
 }
 
@@ -26,6 +27,7 @@ dependencies {
     compile localGroovy()
     compile gradleApi()
     compile 'de.felixschulze.teamcity:teamcity-status-message-helper:1.0.2'
+	compile 'commons-io:commons-io:2.0.1'
 }
 
 task sourceJar(type: Jar) {

@@ -53,8 +53,7 @@ class TodoTask extends DefaultTask {
 
             String extension = FilenameUtils.getExtension(name)
 
-            if (extension != null && project.todo.fileExtensions.contains(extension)) {
-
+            if (extension != null && project.todo.fileExtensions.contains(extension) && !file.isDirectory()) {
                 BufferedReader reader = new BufferedReader(new FileReader(file))
 
                 int lineNumber = 1
